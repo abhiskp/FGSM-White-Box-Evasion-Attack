@@ -1,7 +1,1 @@
-"# ?? AI Security Research Portfolio" 
-"This repository is dedicated to my transition into AI Security Research." 
-"" 
-"## ?? Projects Overview (In Progress)" 
-"1. Project 1: FGSM Evasion Attack (Model Integrity) - Status: Setup Complete" 
-"2. Project 2: Clean-Label Data Poisoning (SecMLOps) - Planned" 
-"3. Project 3: PE File Malware Classifier (Threat Detection) - Planned" 
+FGSM White-Box Evasion Attack: Implements the Fast Gradient Sign Method to expose Model Integrity vulnerabilities in Deep Neural Networks. Achieves adversarial misclassification with imperceptible, gradient-derived noise. Key project for understanding model robustness and offensive AI security tactics. 
