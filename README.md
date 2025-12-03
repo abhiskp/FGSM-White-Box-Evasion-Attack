@@ -1,0 +1,7 @@
+"# ?? AI Security Research Portfolio" 
+"This repository is dedicated to my transition into AI Security Research." 
+"" 
+"## ?? Projects Overview (In Progress)" 
+"1. Project 1: FGSM Evasion Attack (Model Integrity) - Status: Setup Complete" 
+"2. Project 2: Clean-Label Data Poisoning (SecMLOps) - Planned" 
+"3. Project 3: PE File Malware Classifier (Threat Detection) - Planned" 
