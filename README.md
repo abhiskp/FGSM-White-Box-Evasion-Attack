@@ -29,59 +29,25 @@ $$\mathbf{x}_{adv} = \mathbf{x} + \epsilon \cdot \text{sign}(\nabla_{\mathbf{x}}
 
 Attack Parameters
 
-| Parameter                              | Value                                  || Role in Attack                                            |
-| -------------------------------------- | -------------------------------------- | ---------------------------------------------------------- |
-| Victim Model ($\boldsymbol{\theta}$)   | MobileNetV2 (Pre-trained on ImageNet)  | The complex, deployed model we aim to break.               |
-| Perturbation Budget ($\epsilon$)       | $0.05$                                 | Maximum allowed pixel change (controls noise visibility).  | 
-| Input $\mathbf{x}$                     | Labrador Retriever Image               | The benign, correctly classified starting point.           |
+| Parameter | Value | Role in Attack |
+| :------------------------------------- | :------------------------------------- | :--------------------------------------------------------- |
+| Victim Model ($\boldsymbol{\theta}$) | MobileNetV2 (Pre-trained on ImageNet) | The complex, deployed model we aim to break. |
+| Perturbation Budget ($\epsilon$) | $0.05$ | Maximum allowed pixel change (controls noise visibility). |
+| Input $\mathbf{x}$ | Labrador Retriever Image | The benign, correctly classified starting point. |
 
-Perturbation Budget ($\epsilon$)
 
-$0.05$
-
-Maximum allowed pixel change (controls noise visibility).
-
-Input $\mathbf{x}$
-
-Labrador Retriever Image
-
-The benign, correctly classified starting point.
 
 📊 Results: Successful Misclassification
 
 The model was successfully fooled by the adversarial noise, despite the image remaining visually identical to the human eye.
 
-Image
-
-Original Prediction
-
-Adversarial Prediction
-
-Confidence Change
-
-Original Image
-
-Labrador Retriever
-
--
-
-$41.39\%$
-
-Adversarial Example
-
--
-
-Saluki
-
-$14.51\%$
+| Metric | Baseline Class | Attack Target | Confidence Change |
+| :--- | :--- | :--- | :--- |
+| Input Image | Labrador Retriever | Saluki | — |
+| Confidence | $41.39\%$ | $14.51\%$ | $-26.88\%$ |
 
 Visualization
 
-(Note: You need to insert the image of your successful attack here. Since I cannot access the image on your local drive, you must upload the image to GitHub and update the path below.)
-
-Run Cell 5 in your notebook and save the resulting $3$-panel image (Original, Noise, Adversarial Example) to a folder named images/ in your repository.
-
-Use the correct path below once uploaded (e.g., images/fgsm_attack_result.png).
 
 ![FGSM Attack Visualization showing the original image, the noise (delta), and the resulting adversarial image misclassified by MobileNetV2.](source/fgsm_attack_result.png)
 
