@@ -29,17 +29,11 @@ $$\mathbf{x}_{adv} = \mathbf{x} + \epsilon \cdot \text{sign}(\nabla_{\mathbf{x}}
 
 Attack Parameters
 
-Parameter
-
-Value
-
-Role in Attack
-
-Victim Model ($\boldsymbol{\theta}$)
-
-MobileNetV2 (Pre-trained on ImageNet)
-
-The complex, deployed model we aim to break.
+| Parameter                              | Value                                  || Role in Attack                                            |
+| -------------------------------------- | -------------------------------------- | ---------------------------------------------------------- |
+| Victim Model ($\boldsymbol{\theta}$)   | MobileNetV2 (Pre-trained on ImageNet)  | The complex, deployed model we aim to break.               |
+| Perturbation Budget ($\epsilon$)       | $0.05$                                 | Maximum allowed pixel change (controls noise visibility).  | 
+| Input $\mathbf{x}$                     | Labrador Retriever Image               | The benign, correctly classified starting point. |
 
 Perturbation Budget ($\epsilon$)
 
