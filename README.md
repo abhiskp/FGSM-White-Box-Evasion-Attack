@@ -13,15 +13,15 @@ This project demonstrates a critical vulnerability in modern Deep Neural Network
 
 🔑 Key Security & ML Concepts
 
-Model Integrity: The core security risk tested. We prove a model cannot be trusted when faced with adversarial input.
+- Model Integrity: The core security risk tested. We prove a model cannot be trusted when faced with adversarial input.
 
-White-Box Attack: The attacker has full knowledge of the model's parameters ($\boldsymbol{\theta}$) and architecture.
+- White-Box Attack: The attacker has full knowledge of the model's parameters ($\boldsymbol{\theta}$) and architecture.
 
-FGSM (Fast Gradient Sign Method): An efficient, single-step attack that exploits the model's gradient for perturbation generation.
+- FGSM (Fast Gradient Sign Method): An efficient, single-step attack that exploits the model's gradient for perturbation generation.
 
-Adversarial Examples: Inputs that are imperceptible to humans but cause erroneous predictions in AI models.
+- Adversarial Examples: Inputs that are imperceptible to humans but cause erroneous predictions in AI models.
 
-🔬 Methodology: The Attack Formula
+🔬 The Attack Formula
 
 The FGSM relies on calculating the gradient of the loss function $J$ with respect to the input image $\mathbf{x}$, then adding a small perturbation ($\epsilon$) in the direction that maximizes that loss.
 
@@ -33,7 +33,7 @@ Attack Parameters
 | -------------------------------------- | -------------------------------------- | ---------------------------------------------------------- |
 | Victim Model ($\boldsymbol{\theta}$)   | MobileNetV2 (Pre-trained on ImageNet)  | The complex, deployed model we aim to break.               |
 | Perturbation Budget ($\epsilon$)       | $0.05$                                 | Maximum allowed pixel change (controls noise visibility).  | 
-| Input $\mathbf{x}$                     | Labrador Retriever Image               | The benign, correctly classified starting point. |
+| Input $\mathbf{x}$                     | Labrador Retriever Image               | The benign, correctly classified starting point.           |
 
 Perturbation Budget ($\epsilon$)
 
